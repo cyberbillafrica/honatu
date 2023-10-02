@@ -95,7 +95,7 @@
 
 @keyframes mymove {
     from {left: -50%;}
-    to {left: 100%;}
+    to {left: 50%;}
 }
 
 /*** Topbar End ***/
