@@ -94,7 +94,7 @@
 }
 
 @keyframes mymove {
-    from {left: -100%;}
+    from {left: -50%;}
     to {left: 100%;}
 }
 
@@ -103,7 +103,7 @@
 
 /*** Navbar Start ***/
 .navbar .navbar-nav {
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -246,7 +246,7 @@
 }
 
 #carouselId .carousel-indicators li {
-    width: 30px;
+    width: 20px;
     height: 10px;
     background: var(--bs-primary);
     margin: 10px;
