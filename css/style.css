@@ -181,11 +181,11 @@
 
 .carousel-control-prev {
     width: 0px;
-    height: 30px;
+    height: 20px;
     position: absolute;
     top: 50%;
     left: 0;
-    background: var(--bs-primary);
+    background: #26d48c;
     border-radius: 0 50px 50px 0;
     opacity: 1;
 }
@@ -248,7 +248,7 @@
 #carouselId .carousel-indicators li {
     width: 20px;
     height: 10px;
-    background: var(--bs-primary);
+    background:  #26d48c;
     margin: 10px;
     border-radius: 30px;
     opacity: 1;
