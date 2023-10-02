@@ -103,13 +103,13 @@
 
 /*** Navbar Start ***/
 .navbar .navbar-nav {
-    padding: 10px 0;
+    padding: 5px 3;
 }
 
 .navbar .navbar-nav .nav-link {
     padding: 8px;
     color: var(--bs-white);
-    font-size: 16px;
+    font-size: 15px;
     outline: none;
     
 }
@@ -185,7 +185,7 @@
     position: absolute;
     top: 50%;
     left: 0;
-    background: #26d48c;
+    background: red;
     border-radius: 0 50px 50px 0;
     opacity: 1;
 }
