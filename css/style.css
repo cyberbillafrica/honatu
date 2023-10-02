@@ -107,7 +107,7 @@
 }
 
 .navbar .navbar-nav .nav-link {
-    padding: 5px;
+    padding: 8px;
     color: var(--bs-white);
     font-size: 15px;
     outline: none;
