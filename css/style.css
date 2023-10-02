@@ -94,7 +94,7 @@
 }
 
 @keyframes mymove {
-    from {left: -50%;}
+    from {left: -100%;}
     to {left: 50%;}
 }
 
