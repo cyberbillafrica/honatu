@@ -107,9 +107,9 @@
 }
 
 .navbar .navbar-nav .nav-link {
-    padding: 9px;
+    padding: 8px;
     color: var(--bs-white);
-    font-size: 15px;
+    font-size: 16px;
     outline: none;
     
 }
