@@ -247,10 +247,10 @@
 
 #carouselId .carousel-indicators li {
     width: 10px;
-    height: 5px;
+    height: 2px;
     background:  #26d48c;
     margin: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     opacity: 1;
 }
 
