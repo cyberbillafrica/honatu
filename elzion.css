@@ -76,7 +76,7 @@
 }
 
 
-/*** Navbar ***/
+/*** Navbar 
 .sticky-top {
     top: -100px;
     transition: .5s;
@@ -134,7 +134,7 @@
         transition: .5s;
         opacity: 1;
     }
-}
+} ***/
 
 
 /*** Header ***/
