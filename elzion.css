@@ -206,7 +206,7 @@
 /*** About ***/
 .about {
     background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(img/Samoffice.png) left center no-repeat;
-    background-size: center;
+    background-size: cover;
 }
 
 .btn-play {
