@@ -53,6 +53,28 @@
     font-weight: normal;
 }
 
+  .custom-button {
+    padding: 10px 20px;
+    color: #fff; /* Initial text color */
+    border: none;
+    cursor: pointer;
+    animation: bounceColorChange 2s infinite; /* Add a combined bounce and color change animation */
+  }
+
+  @keyframes bounceColorChange {
+    0%, 100% {
+      transform: translateY(0);
+      background-color: #3498db; /* Initial background color */
+    }
+    40% {
+      transform: translateY(-10px); /* Adjust the bounce height */
+      background-color: #e74c3c; /* Change background color */
+    }
+    60% {
+      transform: translateY(-5px); /* Adjust the bounce height */
+    }
+  }
+
 .back-to-top {
     position: fixed;
     width: 50px;
