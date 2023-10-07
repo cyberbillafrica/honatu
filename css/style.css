@@ -64,14 +64,14 @@
   @keyframes bounceColorChange {
     0%, 100% {
       transform: translateY(0);
-      background-color: #3498db; /* Initial background color */
+      background-color: red; /* Initial background color */
     }
     40% {
-      transform: translateY(-10px); /* Adjust the bounce height */
-      background-color: #e74c3c; /* Change background color */
+      transform: translateY(-20px); /* Adjust the bounce height */
+      background-color: #26d48c; /* Change background color */
     }
     60% {
-      transform: translateY(-5px); /* Adjust the bounce height */
+      transform: translateY(-10px); /* Adjust the bounce height */
     }
   }
 
