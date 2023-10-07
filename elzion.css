@@ -206,7 +206,7 @@
 /*** About ***/
 .about {
     background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(img/Samoffice.png) left center no-repeat;
-    background-size: cover;
+    background-size: center;
 }
 
 .btn-play {
@@ -296,14 +296,14 @@
     z-index: 999;
     font-size: 30px;
     font-weight: normal;
-    color: #FFFFFF;
+    color: red;
     background: #000000;
     opacity: 1;
 }
 
 
 /*** Service ***/
-.service-item .service-text {
+/*.service-item .service-text {
     position: relative;
     width: 100%;
     top: 0;
@@ -348,7 +348,7 @@
 
 
 /*** Project ***/
-.project-item {
+/*.project-item {
     position: relative;
     border-radius: 8px;
     overflow: hidden;
@@ -422,7 +422,7 @@
 
 
 /*** Team ***/
-.team-item {
+/*.team-item {
     position: relative;
     text-align: center;
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
@@ -483,7 +483,7 @@
 
 
 /*** Testimonial ***/
-.testimonial-item {
+/*.testimonial-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
     transition: .5s;
 }
@@ -556,7 +556,7 @@
 
 
 /*** Footer ***/
-.footer {
+ /*.footer {
     color: #B0B9AE;
 }
 
@@ -596,3 +596,4 @@
 .copyright a:hover {
     color: var(--primary) !important;
 }
+*/
