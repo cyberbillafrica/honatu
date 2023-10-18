@@ -53,3 +53,37 @@
       cursor: pointer;
       font-size: 18px;
     }
+
+ .pdf-container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #FF0000;
+      border-radius: 5px;
+    }
+
+    .pdf-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      border-bottom: 1px solid #26d48c;
+    }
+
+    .pdf-item:last-child {
+      border-bottom: none;
+    }
+
+    .pdf-icon {
+      width: 50px;
+      height: 50px;
+    }
+
+    .download-button {
+      background-color: #FF0000;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
