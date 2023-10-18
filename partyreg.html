@@ -210,7 +210,7 @@ s0.parentNode.insertBefore(s1,s0);
 
      <!-- Email field -->
      <div class="form-element">
-       <label for="email">Email</label>
+       <label for="email">Email <a style="color: red;">*</a></label>
        <input type="email" id="email" name="email" required>
      </div>
 
@@ -221,8 +221,7 @@ s0.parentNode.insertBefore(s1,s0);
          <option value="">Select gender</option>
          <option value="male">Male</option>
          <option value="female">Female</option>
-         <option value="other">Other</option>
-       </select>
+        </select>
      </div>
 
      <!-- Age field -->
@@ -309,6 +308,21 @@ s0.parentNode.insertBefore(s1,s0);
     }
   });
 </script>
+
+	  <!-- Why do you want to join us field -->
+<div class="form-element">
+  <label>Why do you want to join us?</label>
+  <!-- Create a group of radio buttons with the same name -->
+  <input type="radio" id="vote" name="reason" value="vote" checked>
+  <label for="vote">Vote</label><br>
+  <input type="radio" id="membership" name="reason" value="membership">
+  <label for="membership">Membership</label><br>
+  <input type="radio" id="volunteer" name="reason" value="volunteer">
+  <label for="volunteer">Volunteer</label><br>
+  <input type="radio" id="donate" name="reason" value="donate">
+  <label for="donate">Donate</label><br>
+</div>
+
 
      <!-- Submit button -->
      <div class="form-element">
