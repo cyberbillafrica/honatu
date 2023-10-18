@@ -237,6 +237,79 @@ s0.parentNode.insertBefore(s1,s0);
        <input type="text" id="occupation" name="occupation" required>
      </div>
 
+	 <div class="form-element">
+       <select name="LGA" id="lga" class="form-control" required>
+    <option value="">Select your Local Government Area *</option>
+    <option value="Enugu North">Enugu North</option>
+    <option value="Enugu South">Enugu South</option>
+    <!-- Add more LGAs as needed -->
+  </select>
+</div>
+
+<div class="form-element">
+ <select name="Political-ward" id="ward" class="form-control" required>
+    <option value="">Select your Ward *</option>
+    <!-- Wards will be populated dynamically using JavaScript -->
+  </select>
+</div>
+
+<!-- JavaScript -->
+<script>
+  // Create a mapping of LGAs to wards
+  const lgaWardMapping = {
+    "Enugu North": [
+      "Ward 1 ASATA TOWNSHIP",
+      "Ward 2 UMUNEVO",
+      "Ward 3 IHEWUZI",
+      "Ward 4 ONU-ASATA",
+      "Ward 5 OGBETTE EAST",
+      "Ward 6 OGBETTE WEST",
+      "Ward 7 G.R.A",
+      "Ward 8 OGUI NEW LAYOUT",
+      "Ward 9 CHINA TOWN",
+      "Ward 10 NEW HAVEN",
+      "Ward 11 INDEPENDENCE LAYOUT",
+      "Ward 12 UDI SIDING/IVA VALLEY",
+      "Ward 13 OGUI TOWNSHIP"
+    ],
+    "Enugu South": [
+      "Ward 1 AMECHI I",
+      "Ward 2 AMECHI II",
+      "Ward 3 OBEAGU",
+      "Ward 4 UWANI EAST",
+      "Ward 5 UWANI WEST",
+      "Ward 6 ACHARA LAYOUT EAST",
+      "Ward 7 ACHARA LAYOUT WEST",
+      "Ward 8 AWKUNANAW EAST",
+      "Ward 9 AWKUNANAW WEST",
+      "Ward 10 UGWUAJI",
+      "Ward 11 OBEAGU II",
+      "Ward 12 AKWUKE",
+      "Ward 13 MARYLAND"
+    ]
+  };
+
+  const lgaSelect = document.getElementById("lga");
+  const wardSelect = document.getElementById("ward");
+
+  lgaSelect.addEventListener("change", function () {
+    const selectedLGA = lgaSelect.value;
+    // Clear current ward options
+    wardSelect.innerHTML = "<option value=''>Select your Ward *</option>";
+
+    // Populate the ward dropdown based on the selected LGA
+    if (selectedLGA in lgaWardMapping) {
+      const wards = lgaWardMapping[selectedLGA];
+      wards.forEach((ward) => {
+        const option = document.createElement("option");
+        option.value = ward;
+        option.textContent = ward;
+        wardSelect.appendChild(option);
+      });
+    }
+  });
+</script>
+
      <!-- Submit button -->
      <div class="form-element">
        <button type="submit">Submit</button>
@@ -249,7 +322,9 @@ s0.parentNode.insertBefore(s1,s0);
    <li><a href="LPregform.pdf" download="Membership Registration Form.pdf" style="color: white; font-size: 20px; font-weight: bold; text-decoration: none; background-color: var(--primary-color); padding: 10px; border-radius: 5px;">Download Membership Registration Form</a></li>
    <li><a href="LPcard.pdf" download="Membership Card.pdf" style="color: white; font-size: 20px; font-weight: bold; text-decoration: none; background-color: var(--secondary-color); padding: 10px; border-radius: 5px;">Download Membership Card</a></li>
 </ul>
-         <!-- Footer Start -->
+</form>
+	    
+	<!-- Footer Start -->
          <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
             <div class="container pt-5 pb-4">
                 <div class="row g-5">
