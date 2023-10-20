@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Team Members</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+      background-color: #FF0000;
+      padding: 20px;
+    }
+    .team-member {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .team-member img {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+    }
+    .team-member:hover img {
+      transform: scale(1.1);
+    }
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      background-color: #26d48c;
+      color: #fff;
+      text-align: center;
+      transform: translateY(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    .team-member:hover .caption {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <div class="team-container">
+    <div class="team-member">
+      <img src="img/Chimared.jpg" alt="Chimared">
+      <div class="caption">
+        <h3>Chimared</h3>
+        <p>Position: Manager</p>
+        <p>Department: Sales</p>
+      </div>
+    </div>
+    <div class="team-member">
+      <img src="img/EnuguLPchair.jpg" alt="EnuguLPchair">
+      <div class="caption">
+        <h3>EnuguLPchair</h3>
+        <p>Position: Engineer</p>
+        <p>Department: R&D</p>
+      </div>
+    </div>
+    <div class="team-member">
+      <img src="img/drokwy.png" alt="drokwy">
+      <div class="caption">
+        <h3>drokwy</h3>
+        <p>Position: Designer</p>
+        <p>Department: Marketing</p>
+      </div>
+    </div>
+    <div class="team-member">
+      <img src="img/LPchairman.jpeg" alt="LPchairman">
+      <div class="caption">
+        <h3>LPchairman</h3>
+        <p>Position: Analyst</p>
+        <p>Department: Finance</p>
+      </div>
+    </div>
+    <div class="team-member">
+      <img src="img/Samoffice.png" alt="Samoffice">
+      <div class="caption">
+        <h3>Samoffice</h3>
+        <p>Position: Developer</p>
+        <p>Department: IT</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
