@@ -1,90 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Team Members</title>
+  <title>Team</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
     .team-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      grid-gap: 20px;
-      background-color: #FF0000;
-      padding: 20px;
-    }
-    .team-member {
-      position: relative;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    }
-    .team-member img {
-      display: block;
       width: 100%;
-      height: auto;
-      transition: transform 0.3s ease-in-out;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #FF0000;
+      border-radius: 5px;
     }
-    .team-member:hover img {
-      transform: scale(1.1);
+
+    .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
-    .caption {
+
+    .team-member {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      border: 1px solid #26d48c;
+      border-radius: 5px;
+    }
+
+    .team-member-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .team-member-name {
       position: absolute;
       bottom: 0;
       left: 0;
-      right: 0;
-      padding: 10px;
-      background-color: #26d48c;
-      color: #fff;
+      width: 100%;
+      height: 30px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 16px;
       text-align: center;
-      transform: translateY(100%);
-      transition: transform 0.3s ease-in-out;
     }
-    .team-member:hover .caption {
-      transform: translateY(0);
+
+    .team-member-position {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .team-member-department {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 30px;
+      height: 30px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    /* Animation */
+
+    .team-member-image {
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .team-member-image:hover {
+      transform: scale(1.1);
     }
   </style>
 </head>
 <body>
   <div class="team-container">
-    <div class="team-member">
-      <img src="img/Chimared.jpg" alt="Chimared">
-      <div class="caption">
-        <h3>Chimared</h3>
-        <p>Position: Manager</p>
-        <p>Department: Sales</p>
+    <h2 style="color: #FF0000;">Team</h2>
+    <div class="team-members">
+      <div class="team-member">
+        <img src="img/Chimared.jpg" alt="Team member picture" class="team-member-image">
+        <div class="team-member-name">Chimared</div>
+        <div class="team-member-position">CEO</div>
+        <div class="team-member-department">Management</div>
       </div>
-    </div>
-    <div class="team-member">
-      <img src="img/EnuguLPchair.jpg" alt="EnuguLPchair">
-      <div class="caption">
-        <h3>EnuguLPchair</h3>
-        <p>Position: Engineer</p>
-        <p>Department: R&D</p>
+
+      <div class="team-member">
+        <img src="img/EnuguLPchair.jpg" alt="Team member picture" class="team-member-image">
+        <div class="team-member-name">EnuguLPchair</div>
+        <div class="team-member-position">LPchair</div>
+        <div class="team-member-department">Management</div>
       </div>
-    </div>
-    <div class="team-member">
-      <img src="img/drokwy.png" alt="drokwy">
-      <div class="caption">
-        <h3>drokwy</h3>
-        <p>Position: Designer</p>
-        <p>Department: Marketing</p>
+
+      <div class="team-member">
+        <img src="img/drokwy.png" alt="Team member picture" class="team-member-image">
+        <div class="team-member-name">drokwy</div>
+        <div class="team-member-position">Software Engineer</div>
+        <div class="team-member-department">Engineering</div>
       </div>
-    </div>
-    <div class="team-member">
-      <img src="img/LPchairman.jpeg" alt="LPchairman">
-      <div class="caption">
-        <h3>LPchairman</h3>
-        <p>Position: Analyst</p>
-        <p>Department: Finance</p>
-      </div>
-    </div>
-    <div class="team-member">
-      <img src="img/Samoffice.png" alt="Samoffice">
-      <div class="caption">
-        <h3>Samoffice</h3>
-        <p>Position: Developer</p>
-        <p>Department: IT</p>
+
+      <div class="team-member">
+        <img src="img/LPchairman.jpeg" alt="Team member picture" class="team-member-image">
+        <div class="team-member-name">LPchairman</div>
+        <div class="team-member-position">LPchairman</div>
+        <div class="team-member-department">Management</
+        </div>
       </div>
     </div>
   </div>
