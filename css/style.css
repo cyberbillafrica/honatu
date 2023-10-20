@@ -364,9 +364,7 @@ blockquote.pull-right {
 /*** Services Start ***/
 
 .services .services-item {
-     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/SamwithPO.jpg) center center no-repeat;
-    background-size: cover;
-    box-shadow: 0 0 60px rgba(0, 0, 0, .2);
+     box-shadow: 0 0 60px rgba(0, 0, 0, .2);
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -376,6 +374,8 @@ blockquote.pull-right {
 
 
 .services-content::after {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/SamwithPO.jpg) center center no-repeat;
+    background-size: cover;
     position: absolute;
     content: "";
     width: 100%;
