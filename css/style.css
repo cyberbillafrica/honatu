@@ -374,8 +374,6 @@ blockquote.pull-right {
 
 
 .services-content::after {
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/SamwithPO.jpg) center center no-repeat;
-    background-size: cover;
     position: absolute;
     content: "";
     width: 100%;
@@ -394,6 +392,8 @@ blockquote.pull-right {
 }
 
 .services-item:hover .services-content::after {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/SamwithPO.jpg) center center no-repeat;
+    background-size: cover;
     height: 100%;
     opacity: 1;
     transition: .5s;
