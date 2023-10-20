@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #FF0000;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .team-member {
+            flex-basis: calc(20% - 20px);
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #26d48c;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+
+        .team-member img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        .team-member h3 {
+            margin: 10px 0;
+            color: #26d48c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="team-member">
+            <img src="img/Chimared.jpg" alt="Chimared">
+            <h3>Chimared</h3>
+            <p>Position: CEO</p>
+            <p>Department: Management</p>
+        </div>
+        <div class="team-member">
+            <img src="img/EnuguLPchair.jpg" alt="EnuguLPchair">
+            <h3>Enugu LP Chair</h3>
+            <p>Position: CTO</p>
+            <p>Department: Technology</p>
+        </div>
+        <div class="team-member">
+            <img src="img/drokwy.png" alt="Drokwy">
+            <h3>Drokwy</h3>
+            <p>Position: CFO</p>
+            <p>Department: Finance</p>
+        </div>
+        <div class="team-member">
+            <img src="img/LPchairman.jpeg" alt="LPchairman">
+            <h3>LP Chairman</h3>
+            <p>Position: COO</p>
+            <p>Department: Operations</p>
+        </div>
+        <div class="team-member">
+            <img src="img/Samoffice.png" alt="Samoffice">
+            <h3>Sam Office</h3>
+            <p>Position: CMO</p>
+            <p>Department: Marketing</p>
+        </div>
+    </div>
+</body>
+</html>
