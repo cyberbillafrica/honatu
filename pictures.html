@@ -2,86 +2,70 @@
 <html>
 <head>
     <style>
-        body {
-            background-color: #FF0000;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+        .dropdown-button {
+            background-color: #26d48c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
         }
 
-        .team-member {
-            flex-basis: calc(33.33% - 20px);
-            margin: 10px;
-            padding: 20px;
-            background-color: #fff;
-            border: 2px solid #26d48c;
-            border-radius: 10px;
+        .arrow-down {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid #fff;
+            margin-left: 10px;
+        }
+
+        .buttons {
+            display: none;
+            background: #fff;
+            border: 1px solid #ccc;
+        }
+
+        .button {
+            display: block;
+            background-color: #26d48c;
+            color: #fff;
+            padding: 10px 20px;
             text-align: center;
-            transition: transform 0.2s;
-        }
-
-        .team-member:hover {
-            transform: scale(1.05);
-        }
-
-        .team-member img {
-            max-width: 100%;
-            border-radius: 50%;
-        }
-
-        .team-member h3 {
-            margin: 10px 0;
-            color: #26d48c;
-        }
-
-        @media (max-width: 768px) {
-            .team-member {
-                flex-basis: calc(50% - 20px);
-                margin: 10px auto;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .team-member {
-                flex-basis: calc(100% - 20px);
-                margin: 10px auto;
-            }
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="team-member">
-        <img src="img/Chimared.jpg" alt="Chimared">
-        <h3>Chimared</h3>
-        <p>Position: CEO</p>
-        <p>Department: Management</p>
+    <button class="dropdown-button">Dropdown <i class="arrow-down"></i></button>
+    <div class="buttons">
+        <a class="button" href="javascript:void(0);" onclick="scrollToSection('section1')">Section 1</a>
+        <a class="button" href="javascript:void(0);" onclick="scrollToSection('section2')">Section 2</a>
+        <a class="button" href="javascript:void(0);" onclick="scrollToSection('section3')">Section 3</a>
+        <!-- Add more buttons for additional sections -->
     </div>
-    <div class="team-member">
-        <img src="img/EnuguLPchair.jpg" alt="EnuguLPchair">
-        <h3>Enugu LP Chair</h3>
-        <p>Position: CTO</p>
-        <p>Department: Technology</p>
-    </div>
-    <div class="team-member">
-        <img src="img/drokwy.png" alt="Drokwy">
-        <h3>Drokwy</h3>
-        <p>Position: CFO</p>
-        <p>Department: Finance</p>
-    </div>
-    <div class="team-member">
-        <img src="img/LPchairman.jpeg" alt="LPchairman">
-        <h3>LP Chairman</h3>
-        <p>Position: COO</p>
-        <p>Department: Operations</p>
-    </div>
-    <div class="team-member">
-        <img src="img/Samoffice.png" alt="Samoffice">
-        <h3>Sam Office</h3>
-        <p>Position: CMO</p>
-        <p>Department: Marketing</p>
-    </div>
+
+    <section id="section1">
+        <h2>Section 1</h2>
+        <p>Content for Section 1.</p>
+    </section>
+    <section id="section2">
+        <h2>Section 2</h2>
+        <p>Content for Section 2.</p>
+    </section>
+    <section id="section3">
+        <h2>Section 3</h2>
+        <p>Content for Section 3.</p>
+    </section>
+    <!-- Add more sections for additional sections -->
+
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    </script>
 </body>
 </html>
