@@ -85,7 +85,7 @@ s0.parentNode.insertBefore(s1,s0);
          <div class="container">
                 <nav class="navbar navbar-dark navbar-expand-lg py-0">
                     <a href="index.html" class="navbar-brand">
-                    <h1 class=" fw-bold d-block" style="color: red;">LP<span class="text-right font-weight-normal" style="color: #26d48c;">Membership</span></h1>
+                    <h1 class=" fw-bold d-block" style="color: red;">Support<span class="text-right font-weight-normal" style="color: #26d48c;">Groups</span></h1>
               </a>
                     <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
@@ -112,10 +112,9 @@ s0.parentNode.insertBefore(s1,s0);
 				<div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Support Groups</a>
                                 <div class="dropdown-menu rounded">
-                                    <a href="blog.html" class="dropdown-item">Support Group 1</a>
-                                    <a href="team.html" class="dropdown-item">Support Group 2</a>
-                                    <a href="testimonial.html" class="dropdown-item">Community</a>
-                              </div>
+                                    <a href="supportreg.html" class="dropdown-item">Resister Group</a>
+                                    <a href="groups.html" class="dropdown-item">Groups</a>
+                                </div>
                             </div>
 
                             <div class="nav-item dropdown">
@@ -152,10 +151,10 @@ s0.parentNode.insertBefore(s1,s0);
 	<div class="container-fluid page-header py-5">
          <div style="background-image: url('LPlogo.png'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 300px;">
             <div class="container text-center py-5">
-                <h1 class="display-2 text-white mb-4 animated slideInDown">Party Membership</h1>
+                <h1 class="display-2 text-white mb-4 animated slideInDown">Support Groups Membership</h1>
                 <nav aria-label="breadcrumb animated slideInDown">
                     <ol class="breadcrumb justify-content-center mb-0">
-                        <li class="breadcrumb-item"><a href="#">To become a Labour Party member, fill the Membership Registration Form and print the Membership Card. Locate your Ward Chairman for documentation and familiarization.</a></li>
+                        <li class="breadcrumb-item"><a href="#">To register a support group, fill the Form below. Visit the constituency office for documentation and familiarization.</a></li>
                      </ol>
                 </nav>
 	    </div>
@@ -168,10 +167,7 @@ s0.parentNode.insertBefore(s1,s0);
         <div class="container-fluid bg-secondary py-5">
             <div class="container">
                     <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
-                        <div class="d-flex counter">
-                            <h1 class="me-3 text-primary counter-value">5235700</h1>
-                            <h5 class="text-white mt-1">Membership and counting...</h5>
-                        </div>
+                        <h3>Raise a support base for our leader in your domain</h3>
                     </div>
                 </div>
 	</div>
@@ -193,11 +189,11 @@ s0.parentNode.insertBefore(s1,s0);
 
     <!-- First name field -->
     <div class="form-element">
-      <label for="first-name">First name <a style="color: red;">*</a></label>
+      <label for="first-name">Group name <a style="color: red;">*</a></label>
       <input type="text" id="first-name" name="first-name" required>
     </div>
 
-    <!-- Other names field -->
+    <!-- Other names field 
     <div class="form-element">
       <label for="other-names">Other names <a style="color: red;">*</a></label>
       <input type="text" id="other-names" name="other-names">
@@ -205,124 +201,15 @@ s0.parentNode.insertBefore(s1,s0);
 
     <!-- Phone number field -->
     <div class="form-element">
-      <label for="phone-number">Phone number <a style="color: red;">*</a></label>
+      <label for="phone-number">Contact Phone number <a style="color: red;">*</a></label>
       <input type="tel" id="phone-number" name="phone-number" required>
     </div>
 
      <!-- Email field -->
      <div class="form-element">
-       <label for="email">Email <a style="color: red;">*</a></label>
+       <label for="email">Contact Email <a style="color: red;">*</a></label>
        <input type="email" id="email" name="email" required>
      </div>
-
-     <!-- Gender field -->
-     <div class="form-element">
-       <label for="gender">Gender <a style="color: red;">*</a></label>
-       <select id="gender" name="gender" required>
-         <option value="">Select gender</option>
-         <option value="male">Male</option>
-         <option value="female">Female</option>
-        </select>
-     </div>
-
-     <!-- Age field -->
-     <div class="form-element">
-       <label for="age">Age <a style="color: red;">*</a></label>
-       <input type="number" id="age" name="age" min="18" max="100" required>
-     </div>
-
-     <!-- Occupation field -->
-     <div class="form-element">
-       <label for="occupation">Occupation <a style="color: red;">*</a></label>
-       <input type="text" id="occupation" name="occupation" required>
-     </div>
-
-	 <div class="form-element">
-       <select name="LGA" id="lga" class="form-control" required>
-    <option value="">Select your Local Government Area <a style="color: red;">*</a></option>
-    <option value="Enugu North">Enugu North</option>
-    <option value="Enugu South">Enugu South</option>
-    <!-- Add more LGAs as needed -->
-  </select>
-</div>
-
-<div class="form-element">
- <select name="Political-ward" id="ward" class="form-control" required>
-    <option value="">Select your Ward <a style="color: red;">*</a></option>
-    <!-- Wards will be populated dynamically using JavaScript -->
-  </select>
-</div>
-
-<!-- JavaScript -->
-<script>
-  // Create a mapping of LGAs to wards
-  const lgaWardMapping = {
-    "Enugu North": [
-      "Ward 1 ASATA TOWNSHIP",
-      "Ward 2 UMUNEVO",
-      "Ward 3 IHEWUZI",
-      "Ward 4 ONU-ASATA",
-      "Ward 5 OGBETTE EAST",
-      "Ward 6 OGBETTE WEST",
-      "Ward 7 G.R.A",
-      "Ward 8 OGUI NEW LAYOUT",
-      "Ward 9 CHINA TOWN",
-      "Ward 10 NEW HAVEN",
-      "Ward 11 INDEPENDENCE LAYOUT",
-      "Ward 12 UDI SIDING/IVA VALLEY",
-      "Ward 13 OGUI TOWNSHIP"
-    ],
-    "Enugu South": [
-      "Ward 1 AMECHI I",
-      "Ward 2 AMECHI II",
-      "Ward 3 OBEAGU",
-      "Ward 4 UWANI EAST",
-      "Ward 5 UWANI WEST",
-      "Ward 6 ACHARA LAYOUT EAST",
-      "Ward 7 ACHARA LAYOUT WEST",
-      "Ward 8 AWKUNANAW EAST",
-      "Ward 9 AWKUNANAW WEST",
-      "Ward 10 UGWUAJI",
-      "Ward 11 OBEAGU II",
-      "Ward 12 AKWUKE",
-      "Ward 13 MARYLAND"
-    ]
-  };
-
-  const lgaSelect = document.getElementById("lga");
-  const wardSelect = document.getElementById("ward");
-
-  lgaSelect.addEventListener("change", function () {
-    const selectedLGA = lgaSelect.value;
-    // Clear current ward options
-    wardSelect.innerHTML = "<option value=''>Select your Ward *</option>";
-
-    // Populate the ward dropdown based on the selected LGA
-    if (selectedLGA in lgaWardMapping) {
-      const wards = lgaWardMapping[selectedLGA];
-      wards.forEach((ward) => {
-        const option = document.createElement("option");
-        option.value = ward;
-        option.textContent = ward;
-        wardSelect.appendChild(option);
-      });
-    }
-  });
-</script>
-
-	  <!-- Why do you want to join us field -->
-<div class="form-element">
-  <label>Why do you want to join us? <a style="color: red;">*</a></label>
-  <!-- Create a group of radio buttons with the same name -->
-  <input type="radio" id="vote" name="reason" value="vote">
-  <label for="vote">Vote</label><br>
-  <input type="radio" id="membership" name="reason" value="membership">
-  <label for="membership">Membership</label><br>
-  <input type="radio" id="volunteer" name="reason" value="volunteer">
-  <label for="volunteer">Volunteer</label><br>
-  <input type="radio" id="donate" name="reason" value="donate">
-  <label for="donate">Donate</label><br>
-</div>
 
 
      <!-- Submit button -->
@@ -332,12 +219,6 @@ s0.parentNode.insertBefore(s1,s0);
 
   </form>
 
-<!-- <form class="form-container">
-
-   <p><a href="LPregform.pdf" download="Membership Registration Form.pdf" style="color: white; font-size: 20px; font-weight: bold; text-decoration: none; background-color: var(--primary-color); padding: 10px; border-radius: 5px;">Download Membership Registration Form</a></p>
-   <p><a href="LPcard.pdf" download="Membership Card.pdf" style="color: white; font-size: 20px; font-weight: bold; text-decoration: none; background-color: var(--secondary-color); padding: 10px; border-radius: 5px;">Download Membership Card</a></p>
-
-</form>-->
 
   <div class="pdf-container">
     <div class="pdf-item">
