@@ -75,6 +75,26 @@
     }
   }
 
+
+        .arrow-down {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid #fff;
+            margin-left: 10px;
+        }
+.arrow-right {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent; /* Point to the right */
+  border-bottom: 10px solid transparent; /* Point to the right */
+  border-left: 15px solid #fff; /* Make it longer */
+  margin-left: 10px;
+}
+
 .back-to-top {
     position: fixed;
     width: 50px;
