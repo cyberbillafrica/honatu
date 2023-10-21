@@ -1,204 +1,84 @@
-  /* Define the website color scheme */
-    :root {
-      --primary-color: #FF0000;
-      --secondary-color: #26d48c;
-    }
+/* Define the website color scheme */
+/* Use the colors directly */
+.form-container {
+  width: 80%;
+  margin: 20px auto;
+  border: 2px solid #FF0000; /* Red border */
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-    /* Style the form container */
-    .form-container {
-      width: 80%;
-      margin: 20px auto;
-      border: 2px solid var(--primary-color);
-      border-radius: 10px;
-      padding: 20px;
-      box-sizing: border-box;
-    }
+/* Use media queries to make the form responsive */
+@media screen and (max-width: 600px) {
+  .form-container {
+    width: 100%;
+  }
+}
 
-    /* Use media queries to make the form responsive */
-    @media screen and (max-width: 600px) {
-      .form-container {
-        width: 100%;
-      }
-    }
+/* Style the form elements */
+.form-element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
 
-    /* Style the form elements */
-    .form-element {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 10px;
-    }
+.form-element label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
-    .form-element label {
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
+.form-element input, .form-element select {
+  padding: 10px;
+  border: 1px solid #26d48c; /* Green border */
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
 
-    .form-element input, .form-element select {
-      padding: 10px;
-      border: 1px solid var(--secondary-color);
-      border-radius: 5px;
-      outline: none;
-      font-size: 16px;
-    }
+/* Style the submit button */
+.form-element button {
+  width: fit-content;
+  align-self: center;
+  padding: 10px 20px;
+  background-color: #26d48c; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
 
-    /* Style the submit button */
-    .form-element button {
-      width: fit-content;
-      align-self: center;
-      padding: 10px 20px;
-      background-color: var(--secondary-color);
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 18px;
-    }
+.pdf-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #FF0000; /* Red border */
+  border-radius: 5px;
+}
 
- .pdf-container {
-      width: 100%;
-      margin: 0 auto;
-      padding: 20px;
-      border: 1px solid #FF0000;
-      border-radius: 5px;
-    }
+.pdf-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #26d48c; /* Green border */
+}
 
-    .pdf-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px;
-      border-bottom: 1px solid #26d48c;
-    }
+.pdf-item:last-child {
+  border-bottom: none;
+}
 
-    .pdf-item:last-child {
-      border-bottom: none;
-    }
+.pdf-icon {
+  width: 50px;
+  height: 50px;
+}
 
-    .pdf-icon {
-      width: 50px;
-      height: 50px;
-    }
-
-    .download-button {
-      background-color: #FF0000;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-    }
-
-
-    .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .team-member {
-            flex-basis: calc(20% - 20px);
-            margin: 10px;
-            padding: 20px;
-            background-color: #fff;
-            border: 2px solid #26d48c;
-            border-radius: 10px;
-            text-align: center;
-            transition: transform 0.2s;
-        }
-
-        .team-member:hover {
-            transform: scale(1.05);
-        }
-
-        .team-member img {
-            max-width: 100%;
-            border-radius: 50%;
-        }
-
-        .team-member h3 {
-            margin: 10px 0;
-            color: #26d48c;
-        }
-
-
-
-    .team-container {
-      width: 100%;
-      margin: 0 auto;
-      padding: 20px;
-      border: 1px solid #FF0000;
-      border-radius: 5px;
-    }
-
-    .team-members {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .team-member {
-      width: 200px;
-      height: 200px;
-      margin: 10px;
-      border: 1px solid #26d48c;
-      border-radius: 5px;
-    }
-
-    .team-member-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 5px;
-    }
-
-    .team-member-name {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 30px;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      font-size: 16px;
-      text-align: center;
-    }
-
-    .team-member-position {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 30px;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      font-size: 16px;
-      text-align: center;
-    }
-
-    .team-member-department {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 30px;
-      height: 30px;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      font-size: 16px;
-      text-align: center;
-    }
-
-    /* Animation */
-
-    .team-member-image {
-      transition: transform 0.5s ease-in-out;
-    }
-
-    .team-member-image:hover {
-      transform: scale(1.1);
-      }
+.download-button {
+  background-color: #FF0000; /* Red background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
