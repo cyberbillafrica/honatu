@@ -91,7 +91,7 @@
   height: 0;
   border-top: 10px solid transparent; /* Point to the right */
   border-bottom: 10px solid transparent; /* Point to the right */
-  border-left: 15px solid #fff; /* Make it longer */
+  border-left: 20px solid #fff; /* Make it longer */
   margin-left: 10px;
 }
 
