@@ -24,6 +24,7 @@
             display: none;
             background: #fff;
             border: 1px solid #ccc;
+            position: absolute;
         }
 
         .button {
@@ -34,30 +35,88 @@
             text-align: center;
             text-decoration: none;
         }
+
+        /* Add custom styles to your button */
+        .custom-button {
+            background-color: #26d48c;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
-    <button class="dropdown-button">Dropdown <i class="arrow-down"></i></button>
-    <div class="buttons">
-        <a class="button" href="javascript:void(0);" onclick="scrollToSection('section1')">Section 1</a>
-        <a class="button" href="javascript:void(0);" onclick="scrollToSection('section2')">Section 2</a>
-        <a class="button" href="javascript:void(0);" onclick="scrollToSection('section3')">Section 3</a>
-        <!-- Add more buttons for additional sections -->
+    <button class="dropdown-button" id="dropdownButton">Dropdown <i class="arrow-down"></i></button>
+    <div class="buttons" id="dropdownContent">
+        <a class="button" href="javascript:void(0);" onclick="scrollToSection('ward1')">Ward 1-</a>
+        <a class="button" href="javascript:void(0);" onclick="scrollToSection('ward2')">Ward 2-</a>
+        <a class="button" href="javascript:void(0);" onclick="scrollToSection('ward3')">Ward 3-</a>
+        <!-- Add more buttons for Ward 4 to Ward 13 as needed -->
+        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward4')">Ward 4-</a>
+        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward5')">Ward 5-</a>
+        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward6')">Ward 6-</a>
+        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward7')">Ward 7-</a>
+        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward8')">Ward 8-</a>
+        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward9')">Ward 9-</a>
+        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward10')">Ward 10-</a>
+        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward11')">Ward 11-</a>
+        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward12')">Ward 12-</a>
+        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward13')">Ward 13-</a>
     </div>
 
-    <section id="section1">
-        <h2>Section 1</h2>
-        <p>Content for Section 1.</p>
+    <section id="ward1">
+        <h2>Ward 1-</h2>
+        <p>Content for Ward 1-</p>
     </section>
-    <section id="section2">
-        <h2>Section 2</h2>
-        <p>Content for Section 2.</p>
+    <section id="ward2">
+        <h2>Ward 2-</h2>
+        <p>Content for Ward 2-</p>
     </section>
-    <section id="section3">
-        <h2>Section 3</h2>
-        <p>Content for Section 3.</p>
+    <section id="ward3">
+        <h2>Ward 3-</h2>
+        <p>Content for Ward 3-</p>
     </section>
-    <!-- Add more sections for additional sections -->
+    <!-- Add more sections for Ward 4 to Ward 13 as needed -->
+    <section id="ward4">
+        <h2>Ward 4-</h2>
+        <p>Content for Ward 4-</p>
+    </section>
+    <section id="ward5">
+        <h2>Ward 5-</h2>
+        <p>Content for Ward 5-</p>
+    </section>
+    <section id="ward6">
+        <h2>Ward 6-</h2>
+        <p>Content for Ward 6-</p>
+    </section>
+    <section id="ward7">
+        <h2>Ward 7-</h2>
+        <p>Content for Ward 7-</p>
+    </section>
+    <section id="ward8">
+        <h2>Ward 8-</h2>
+        <p>Content for Ward 8-</p>
+    </section>
+    <section id="ward9">
+        <h2>Ward 9-</h2>
+        <p>Content for Ward 9-</p>
+    </section>
+    <section id="ward10">
+        <h2>Ward 10-</h2>
+        <p>Content for Ward 10-</p>
+    </section>
+    <section id="ward11">
+        <h2>Ward 11-</h2>
+        <p>Content for Ward 11-</p>
+    </section>
+    <section id="ward12">
+        <h2>Ward 12-</h2>
+        <p>Content for Ward 12-</p>
+    </section>
+    <section id="ward13">
+        <h2>Ward 13-</h2>
+        <p>Content for Ward 13-</p>
+    </section>
 
     <script>
         function scrollToSection(sectionId) {
@@ -66,6 +125,20 @@
                 section.scrollIntoView({ behavior: "smooth" });
             }
         }
+
+        // Toggle dropdown menu visibility
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdownButton = document.getElementById("dropdownButton");
+            const buttonsContainer = document.getElementById("dropdownContent");
+
+            dropdownButton.addEventListener("click", function () {
+                if (buttonsContainer.style.display === "block") {
+                    buttonsContainer.style.display = "none";
+                } else {
+                    buttonsContainer.style.display = "block";
+                }
+            });
+        });
     </script>
 </body>
 </html>
