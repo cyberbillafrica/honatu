@@ -56,52 +56,11 @@
             border-top: 10px solid #fff;
             margin-left: 10px;
         }
-
-        .buttons {
-            display: none;
-            background: #fff;
-            border: 1px solid #ccc;
-            position: absolute;
-            width: 150px;
-            /*top: 100%; /* Position the dropdown below the button */
-            /* left: 0;*/
-        }
-
-        .button {
-            display: block;
-            background-color: #26d48c;
-            color: #fff;
-            padding: 5px 10px;
-            text-align: center;
-            text-decoration: none;
-            text-color: red;
-        }
-
     </style>
 </head>
 <body>
 
      
-
-    
-    <button class="dropdown-button" id="dropdownButton">Dropdown <i class="arrow-down"></i></button>
-    <div class="buttons" id="dropdownContent">
-        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward4')">Ward 1-</a>
-        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward5')">Ward 2-</a>
-        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward6')">Ward 3-</a>
-      <!-- Add more buttons for Ward 4 to Ward 13 as needed -->
-        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward4')">Ward 4-</a>
-        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward5')">Ward 5-</a>
-        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward6')">Ward 6-</a>
-        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward7')">Ward 7-</a>
-        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward8')">Ward 8-</a>
-        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward9')">Ward 9-</a>
-        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward10')">Ward 10-</a>
-        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward11')">Ward 11-</a>
-        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward12')">Ward 12-</a>
-        <a href="javascript:void(0);" class="custom-button" onclick="scrollToSection('ward13')">Ward 13-</a>
-     </div>
-
     <section id="ward1">
         <h2>Ward 1-</h2>
         <p>Content for Ward 1-</p>
@@ -160,32 +119,49 @@
          <div class="container">
                 <nav class="navbar navbar-dark navbar-expand-lg py-0">
                       <a href="index.html" class="navbar-brand">
-                    <h1 class=" fw-bold d-block" style="color: red;">Enugu<span class="text-right font-weight-normal" style="color: #26d48c;">North</span></h1>
+                    <h1 class=" fw-bold d-block" style="color: red;">GoTo<span class="text-right font-weight-normal" style="color: #26d48c;">Wards</span></h1>
               </a>
 			<button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-<button type="button" class="navbar-toggler btn btn-primary me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"> Menu <i class="fas fa-bars"></i> <span class="navbar-toggler-icon" style="display: none;"></span> </button>
-				       
+			<div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><b>Enugu North LGA</b></a>
+                                <div class="dropdown-menu rounded">
+                                <a href="#ward1" class="dropdown-item"><b>Ward 1 ASATA TOWNSHIP</b></a>
+                                <a href="#ward2" class="dropdown-item"><b>Ward 2 UMUNEVO</b></a>
+                                <a href="#ward3" class="dropdown-item"><b>Ward 3 IHEWUZI</b></a>
+                                <a href="#ward4" class="dropdown-item"><b>Ward 4 ONU-ASATA</b></a>
+                                <a href="#ward5" class="dropdown-item"><b>Ward 5 OGBETTE EAST</b></a>
+                                <a href="#ward6" class="dropdown-item"><b>Ward 6 OGBETTE WEST</b></a>
+                                <a href="#ward7" class="dropdown-item"><b>Ward 7 G.R.A</b></a>
+                                <a href="#ward8" class="dropdown-item"><b>Ward 8 OGUI NEW LAYOUT</b></a>
+                                <a href="#ward9" class="dropdown-item"><b>Ward 9 CHINA TOWN</b></a>
+                                <a href="#ward10" class="dropdown-item"><b>Ward 10 NEW HAVEN</b></a>
+                                <a href="#ward11" class="dropdown-item"><b>Ward 11 INDEPENDENCE LAYOUT</b></a>
+                                <a href="#ward12" class="dropdown-item"><b>Ward 12 UDI SIDING/IVA VALLEY</b></a>
+                                <a href="#ward13" class="dropdown-item"><b>Ward 13 OGUI TOWNSHIP</b></a>
+                                 </div>
+                            </div>
 
-			
-                    <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
-                        <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                         <a href="" class="nav-item nav-link active text-secondary">Ward 1</a> 
-                            <a href="" class="nav-item nav-link">Ward 2</a>
-                            <a href="" class="nav-item nav-link">Ward 3</a>
-                            <a href="" class="nav-item nav-link"><b>Ward 4</b></a>
-			    <a href="" class="nav-item nav-link"><b>Ward 5</b></a>
-		            <a href="" class="nav-item nav-link"><b>Ward 6</b></a>
-			    <a href="" class="nav-item nav-link"><b>Ward 7</b></a>
-			    <a href="" class="nav-item nav-link"><b>Ward 8</b></a>
-		            <a href="" class="nav-item nav-link"><b>Ward 9</b></a>
-			    <a href="" class="nav-item nav-link"><b>Ward 10</b></a>
-			    <a href="" class="nav-item nav-link"><b>Ward 11</b></a>
-			    <a href="" class="nav-item nav-link"><b>Ward 12</b></a>
-			    <a href="" class="nav-item nav-link"><b>Ward 13</b></a>
-
+                   <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><b>Enugu South LGA</b></a>
+                                <div class="dropdown-menu rounded">
+                                <a href="#ward1" class="dropdown-item"><b></b></a>
+                                <a href="#ward2" class="dropdown-item"><b></b></a>
+                                <a href="#ward3" class="dropdown-item"><b></b></a>
+                                <a href="#ward4" class="dropdown-item"><b></b></a>
+                                <a href="#ward5" class="dropdown-item"><b></b></a>
+                                <a href="#ward6" class="dropdown-item"><b></b></a>
+                                <a href="#ward7" class="dropdown-item"><b></b></a>
+                                <a href="#ward8" class="dropdown-item"><b></b></a>
+                                <a href="#ward9" class="dropdown-item"><b></b></a>
+                                <a href="#ward10" class="dropdown-item"><b></b></a>
+                                <a href="#ward11" class="dropdown-item"><b></b></a>
+                                <a href="#ward12" class="dropdown-item"><b></b></a>
+                                <a href="#ward13" class="dropdown-item"><b></b></a>
+                                 </div>
+                            </div>
 
 				
 
@@ -203,6 +179,10 @@
         <p>Content for Ward 13-</p>
     </section>
 
+
+
+
+	
     <script>
         function scrollToSection(sectionId) {
             var section = document.getElementById(sectionId);
