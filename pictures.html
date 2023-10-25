@@ -92,25 +92,19 @@
 
     <button id="playButton">Play</button>
 
+    
     <script>
         const audio = document.getElementById("audioPlayer");
         const playButton = document.getElementById("playButton");
 
         playButton.addEventListener("click", () => {
             if (audio.paused) {
-                // If audio is paused, play it
                 audio.play();
-                playButton.textContent = "Pause"; // Change button text to "Pause"
+                playButton.textContent = "Pause";
             } else {
-                // If audio is playing, pause it
                 audio.pause();
-                playButton.textContent = "Play"; // Change button text to "Play"
+                playButton.textContent = "Play";
             }
-        });
-
-        audio.addEventListener("ended", () => {
-            // Reset the button to "Play" when audio ends
-            playButton.textContent = "Play";
         });
     </script>
 
