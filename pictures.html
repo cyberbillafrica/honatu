@@ -83,6 +83,37 @@
   });
 </script>
 
+
+	
+    <audio id="audioPlayer" controls>
+        <source src="media/obidientmusic.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <button id="playButton">Play</button>
+
+    <script>
+        const audio = document.getElementById("audioPlayer");
+        const playButton = document.getElementById("playButton");
+
+        playButton.addEventListener("click", () => {
+            if (audio.paused) {
+                // If audio is paused, play it
+                audio.play();
+                playButton.textContent = "Pause"; // Change button text to "Pause"
+            } else {
+                // If audio is playing, pause it
+                audio.pause();
+                playButton.textContent = "Play"; // Change button text to "Play"
+            }
+        });
+
+        audio.addEventListener("ended", () => {
+            // Reset the button to "Play" when audio ends
+            playButton.textContent = "Play";
+        });
+    </script>
+
 <!-- Hover Effect #5 Start -->
         <div class="container">
             <div class="section-title">
@@ -102,62 +133,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="column">
-                    <div class="effect-5">
-                        <div class="effect-img">
-                            <img src="img/img-2.jpg" alt="Team Image">
-                        </div>
-                        <div class="effect-text">
-                            <h2>This is heading</h2>
-                           	 <p>Select your Political Ward to see our Party structure and contact in your area.</p>
-                                <div class="effect-btn">
-                                <a class="btn" href="#"><i class="fa fa-eye"></i> Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="effect-5">
-                        <div class="effect-img">
-                            <img src="img/img-3.jpg" alt="Team Image">
-                        </div>
-                        <div class="effect-text">
-                            <h2>This is heading</h2>
-                             <p>Select your Political Ward to see our Party structure and contact in your area.</p>
-                               <div class="effect-btn">
-                                <a class="btn" href="#"><i class="fa fa-eye"></i> Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+		</div>
             </div> 
         </div>
         <!-- Hover Effect #5 End -->
 
-	
-    <script>
-        function scrollToSection(sectionId) {
-            var section = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: "smooth" });
-            }
-        }
-
-        // Toggle dropdown menu visibility
-        document.addEventListener("DOMContentLoaded", function () {
-            const dropdownButton = document.getElementById("dropdownButton");
-            const buttonsContainer = document.getElementById("dropdownContent");
-
-            dropdownButton.addEventListener("click", function () {
-                if (buttonsContainer.style.display === "block") {
-                    buttonsContainer.style.display = "none";
-                } else {
-                    buttonsContainer.style.display = "block";
-                }
-            });
-        });
-    </script>
 
 	<!-- JavaScript Libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
