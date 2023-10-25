@@ -75,6 +75,23 @@
     }
   }
 
+.custom-button1 {
+    padding: 10px 20px;
+    color: #fff; /* Initial text color */
+    background-color: red; /* Initial background color */
+    border: none;
+    cursor: pointer;
+    animation: colorChange 2s infinite; /* Add a color change animation */
+}
+
+@keyframes colorChange {
+    0%, 100% {
+        background-color: red; /* Initial background color */
+    }
+    40% {
+        background-color: #26d48c; /* Change background color */
+    }
+}
 
         .arrow-down {
             display: inline-block;
