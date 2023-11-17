@@ -209,7 +209,8 @@
     background-size: cover;
     /* Media query for smaller screens */
 @media (max-width: 768px) {
-  
+   .about {
+       background-size: contain;
 }
 /* Media query for smaller screens 
 @media (max-width: 768px) {
