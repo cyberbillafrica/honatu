@@ -626,11 +626,6 @@ footer {
         </select>
      </div>
 
- <!-- Age field --
-     <div class="form-element">
-       <label for="age">Age <a style="color: red;">*</a></label>
-       <input type="number" id="age" name="age" min="18" max="100" required>
-     </div>-->
 
 <div class="form-element">
        <label for="age">Age <a style="color: red;">*</a></label>
@@ -646,7 +641,7 @@ footer {
        </div>
 
   <div class="form-element">
-       <label for="gender">Highest Education Attained <a style="color: red;">*</a></label>
+    <label for="gender">Highest Education Attained <a style="color: red;">*</a></label>
       <select name="education" required="required">
     <option value="">Select Highest Education Attained *</option>
     <option value="Uneducated">Uneducated</option>
@@ -660,6 +655,35 @@ footer {
 </div>
 
                   
+<div class="form-element">
+<label for="localGovernment">Select Local Government:</label>
+  <select id="localGovernment" name="localGovernment">
+    <option value="aninri">Aninri</option>
+    <option value="awgu">Awgu</option>
+    <option value="enuguEast">Enugu East</option>
+    <option value="enuguNorth">Enugu North</option>
+    <option value="enuguSouth">Enugu South</option>
+    <option value="ezeagu">Ezeagu</option>
+    <option value="igboEtiti">Igbo Etiti</option>
+    <option value="igboEzeNorth">Igbo Eze North</option>
+    <option value="igboEzeSouth">Igbo Eze South</option>
+    <option value="isiUzo">Isi Uzo</option>
+    <option value="nkanuEast">Nkanu East</option>
+    <option value="nkanuWest">Nkanu West</option>
+    <option value="nsukka">Nsukka</option>
+    <option value="ojiRiver">Oji River</option>
+    <option value="udenu">Udenu</option>
+    <option value="udi">Udi</option>
+    <option value="uzoUwani">Uzo-Uwani</option>
+  </select>
+</div>
+
+<!-- Age field -->
+     <div class="form-element">
+       <label for="ward">Political Ward<a style="color: red;">*</a></label>
+       <input type="text" id="ward" name="ward" required>
+     </div>-->
+		
 <div class="form-element">
        <label for="gender">Occupation <a style="color: red;">*</a></label>
        <select name="occupation" required="required">
@@ -675,8 +699,8 @@ footer {
     
      <!-- Occupation field -->
      <div class="form-element">
-       <label for="occupation">Type Your Occupation <a style="color: red;">*</a></label>
-       <input type="text" id="occupation" name="occupation" required>
+       <label for="occupation">Otherwise type your Occupation</label>
+       <input type="text" id="occupation" name="occupation">
      </div>
   
 <!-- File Upload field -->
