@@ -15,7 +15,12 @@
 
 /*** Spinner End ***/
 
-
+main {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*** Button Start ***/
 .btn {
     font-weight: 600;
