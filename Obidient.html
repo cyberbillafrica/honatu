@@ -656,8 +656,8 @@ footer {
 
                   
 <div class="form-element">
-<label for="localGovernment">Select Local Government:</label>
-  <select id="localGovernment" name="localGovernment">
+<label for="localGovernment">Select Local Government <a style="color: red;">*</a></label>
+  <select id="localGovernment" name="localGovernment" required="required">
     <option value="">Select LGA of Residence *</option>
     <option value="aninri">Aninri</option>
     <option value="awgu">Awgu</option>
@@ -682,8 +682,9 @@ footer {
 <!-- Ward field -->
      <div class="form-element">
        <label for="ward">Political Ward<a style="color: red;">*</a></label>
-       <input type="text" id="ward" name="ward" required>
-     </div>-->
+       <class>If you don't know your ward, tell us your town e.g Agbani, Ugwuaji.</class>
+	<input type="text" id="ward" name="ward" required>
+     </div>
 		
 <div class="form-element">
        <label for="gender">Occupation <a style="color: red;">*</a></label>
@@ -695,7 +696,8 @@ footer {
     <option value="Farmer">Farmer</option>
     <option value="Student">Student</option>
     <option value="">Unemployed</option>
-  </select>
+    <option value="">Other</option>
+ </select>
 </div>
     
      <!-- Occupation field -->
