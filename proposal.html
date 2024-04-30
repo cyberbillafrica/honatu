@@ -292,26 +292,20 @@ s0.parentNode.insertBefore(s1,s0);
        <label for="age">Age <a style="color: red;">*</a></label>
  <select name="age-bracket" required="required">
     <option value="">Select Age Range *</option>
-    <option value="18-24">18-24</option>
-    <option value="25-29">25-29</option>
-    <option value="30-34">30-34</option>
-    <option value="35-39">35-39</option>
-    <option value="40-64">40-64</option>
-    <option value="65 and above">65 and Above</option>
-  </select>
+    <option value="18-24">16</option>
+    <option value="25-29">17</option>
+    <option value="30-34">18</option>
+    <option value="35-39">19</option>
+    <option value="40-64">20</option>
+     </select>
        </div>
 
   <div class="form-element">
-    <label for="gender">Highest Education Attained <a style="color: red;">*</a></label>
+    <label for="gender">Education Level<a style="color: red;">*</a></label>
       <select name="education" required="required">
-    <option value="">Select Highest Education Attained *</option>
-    <option value="Uneducated">Uneducated</option>
-    <option value="Primary School">Primary School</option>
-    <option value="Secondary School">Secondary School</option>
-    <option value="Undergraduate">Undergraduate</option>
-    <option value="NCE/OND">NCE/OND</option>
-    <option value="BSc/HND">BSc/HND</option>
-    <option value="Post Graduate">Post Graduate</option>
+    <option value="">Select Education Level *</option>
+    <option value="BSc/HND">SS3</option>
+    <option value="Post Graduate">School Lever</option>
   </select>
 </div>
 
@@ -320,52 +314,18 @@ s0.parentNode.insertBefore(s1,s0);
 <label for="localGovernment">Select Local Government <a style="color: red;">*</a></label>
   <select id="localGovernment" name="localGovernment" required="required">
     <option value="">Select LGA of Residence *</option>
-    <option value="aninri">Aninri</option>
-    <option value="awgu">Awgu</option>
-    <option value="enuguEast">Enugu East</option>
     <option value="enuguNorth">Enugu North</option>
     <option value="enuguSouth">Enugu South</option>
-    <option value="ezeagu">Ezeagu</option>
-    <option value="igboEtiti">Igbo Etiti</option>
-    <option value="igboEzeNorth">Igbo Eze North</option>
-    <option value="igboEzeSouth">Igbo Eze South</option>
-    <option value="isiUzo">Isi Uzo</option>
-    <option value="nkanuEast">Nkanu East</option>
-    <option value="nkanuWest">Nkanu West</option>
-    <option value="nsukka">Nsukka</option>
-    <option value="ojiRiver">Oji River</option>
-    <option value="udenu">Udenu</option>
-    <option value="udi">Udi</option>
-    <option value="uzoUwani">Uzo-Uwani</option>
-  </select>
+    </select>
 </div>
 
 <!-- Ward field -->
      <div class="form-element">
        <label for="ward">Political Ward<a style="color: red;">*</a></label>
-       <class>If you don't know your ward, tell us your town e.g Agbani, Ugwuaji.</class>
+       <class>If you don't know your ward, tell us your town e.g Asata, Ugwuaji.</class>
 	<input type="text" id="ward" name="ward" required>
      </div>
 		
-<div class="form-element">
-       <label for="gender">Occupation <a style="color: red;">*</a></label>
-       <select name="occupation" required="required">
-    <option value="">Select Occupation *</option>
-    <option value="Artisan (Ọrụ Aka)">Artisan (Ọrụ Aka)</option>
-    <option value="Business">Business</option>
-    <option value="Civil Servant (salary earner)">Civil Servant (salary earner)</option>
-    <option value="Farmer">Farmer</option>
-    <option value="Student">Student</option>
-    <option value="">Unemployed</option>
-    <option value="">Other</option>
- </select>
-</div>
-    
-     <!-- Occupation field -->
-     <div class="form-element">
-       <label for="occupation">Otherwise type your Occupation</label>
-       <input type="text" id="occupation" name="occupation">
-     </div>
   
 <!-- File Upload field -->
 <div class="form-element">
@@ -373,6 +333,20 @@ s0.parentNode.insertBefore(s1,s0);
 	<class>Upload an image showing your face clearly</class>
     <input type="file" name="image" accept="image/*">
   </div>
+
+		 <!-- File Upload field -->
+<div class="form-element">
+    <label for="file">Upload Image</label>
+	<class>Upload an image showing your last result (term or WEAC) </class>
+    <input type="file" name="image" accept="image/*">
+</div>
+
+		 <!-- File Upload field -->
+<div class="form-element">
+    <label for="file">Upload Image</label>
+	<class>Upload an image showing your face clearly</class>
+    <input type="file" name="image" accept="image/*">
+</div>
 
 
      <!-- Submit button -->
